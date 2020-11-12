@@ -1,5 +1,8 @@
 ﻿using eShopSolution.Data.Configuration;
 using eShopSolution.Data.Entities;
+using eShopSolution.Data.Extensions;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +11,7 @@ using System.Text;
 
 namespace eShopSolution.Data.EF
 {
-    public class EShopDBContext : DbContext
+    public class EShopDBContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
         public EShopDBContext(DbContextOptions options) : base(options)
         {
@@ -30,6 +33,19 @@ namespace eShopSolution.Data.EF
             modelBuilder.ApplyConfiguration(new PromotionConfiguaration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguaration());
             modelBuilder.ApplyConfiguration(new ProductInCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new AppRoleConfiguaration());
+            modelBuilder.ApplyConfiguration(new AppUserConfiguaration());
+            modelBuilder.ApplyConfiguration(new ProductImageConfiguation());
+
+            modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims");
+            modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x => new { x.UserId, x.RoleId });
+            modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
+
+            modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims");
+            modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
+
+            //Data seed
+            modelBuilder.Seed();
            // base.OnModelCreating(modelBuilder);
         }
         public DbSet<Product> Products { get; set; }
@@ -41,7 +57,8 @@ namespace eShopSolution.Data.EF
         public DbSet<Language> Languages { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
-        public DbSet<ProductTranslations> ProductTranslations { get; set; }
+        public DbSet<ProductTranslation> ProductTranslations { get; set; }
+        public DbSet<ProductInCategory> ProductInCategories { get; set; }
         public DbSet<Promotion> Promotions { get; set; }
         //public DbSet<Slide> Slides { get; set; }
         public DbSet<Transaction> Transactions { get; set; }

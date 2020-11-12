@@ -7,6 +7,9 @@ D:\projectcsharp\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp3.1\eShopS
 D:\projectcsharp\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp3.1\eShopSolution.Data.runtimeconfig.dev.json
 D:\projectcsharp\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.genruntimeconfig.cache
 D:\projectcsharp\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp3.1\eShopSolution.Data.pdb
-D:\projectcsharp\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.csproj.CoreCompileInputs.cache
 D:\projectcsharp\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.dll
 D:\projectcsharp\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.pdb
+D:\projectcsharp\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.csproj.CoreCompileInputs.cache
+D:\projectcsharp\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp3.1\eShopSolution.Utilities.dll
+D:\projectcsharp\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp3.1\eShopSolution.Utilities.pdb
+D:\projectcsharp\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.csproj.CopyComplete

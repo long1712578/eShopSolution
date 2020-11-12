@@ -7,9 +7,9 @@ using System.Text;
 
 namespace eShopSolution.Data.Configuration
 {
-    public class ProductTranslationConfiguaration:IEntityTypeConfiguration<ProductTranslations>
+    public class ProductTranslationConfiguaration:IEntityTypeConfiguration<ProductTranslation>
     {
-        public void Configure(EntityTypeBuilder<ProductTranslations> builder)
+        public void Configure(EntityTypeBuilder<ProductTranslation> builder)
         {
             builder.ToTable("ProductTranslations");
 
