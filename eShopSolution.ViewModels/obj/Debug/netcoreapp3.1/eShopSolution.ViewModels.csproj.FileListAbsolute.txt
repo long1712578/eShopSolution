@@ -1,0 +1,9 @@
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\bin\Debug\netcoreapp3.1\eShopSolution.ViewModels.deps.json
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\bin\Debug\netcoreapp3.1\eShopSolution.ViewModels.dll
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\obj\Debug\netcoreapp3.1\eShopSolution.ViewModels.csprojAssemblyReference.cache
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\obj\Debug\netcoreapp3.1\eShopSolution.ViewModels.AssemblyInfoInputs.cache
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\obj\Debug\netcoreapp3.1\eShopSolution.ViewModels.AssemblyInfo.cs
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\bin\Debug\netcoreapp3.1\eShopSolution.ViewModels.pdb
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\obj\Debug\netcoreapp3.1\eShopSolution.ViewModels.csproj.CoreCompileInputs.cache
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\obj\Debug\netcoreapp3.1\eShopSolution.ViewModels.dll
+D:\projectcsharp\eShopSolution\eShopSolution.ViewModels\obj\Debug\netcoreapp3.1\eShopSolution.ViewModels.pdb
